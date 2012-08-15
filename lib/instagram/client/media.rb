@@ -38,7 +38,7 @@ module Instagram
         options = args.last.is_a?(Hash) ? args.pop : {}
         id = args.first || "self"
         response = get("media/popular", options)
-        response["data"]
+        response
       end
 
       # Returns media items within proximity of given lat,lng

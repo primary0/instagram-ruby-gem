@@ -17,7 +17,7 @@ module Instagram
       # @see TODO:docs url
       def media_likes(id, *args)
         response = get("media/#{id}/likes")
-        response["data"]
+        response        
       end
 
       # Issues a like by the currently authenticated user, for a given media item ID
