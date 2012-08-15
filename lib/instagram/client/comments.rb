@@ -17,7 +17,7 @@ module Instagram
       # @see TODO:docs url
       def media_comments(id, *args)
         response = get("media/#{id}/comments")
-        response
+        response["data"]
       end
 
       # Creates a comment for a given media item ID

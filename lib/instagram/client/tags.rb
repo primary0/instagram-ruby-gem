@@ -52,7 +52,7 @@ module Instagram
       #   Instagram.tag_search("cat")
       def tag_search(query, options={})
         response = get('tags/search', options.merge(:q => query))
-        response
+        response["data"]
       end
     end
   end
